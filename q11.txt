@@ -1,0 +1,2 @@
+11. what is the difference between break and continue?
+A: break stops the loop and continue skips the current iteration
