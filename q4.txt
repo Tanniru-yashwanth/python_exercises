@@ -1,0 +1,8 @@
+4.What do the following expressions evaluate to?
+A:
+ (5 > 4) and (3 == 5) = F
+ not (5>4)            = F
+ (5 > 4) or (3==5)    = T
+ not ((5>4) or (3==5))= F
+ (True and True) and (True == False) = F
+ (not False) or (not True) = T
