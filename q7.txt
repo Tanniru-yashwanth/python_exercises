@@ -1,0 +1,4 @@
+7. Explain what a condition is and where you would use one.
+A:
+  condition is a statement that should satisfy the requirement 
+  we use conditions in if and else cases and also in for and while loops
