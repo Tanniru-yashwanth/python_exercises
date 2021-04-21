@@ -1,0 +1,25 @@
+8. Identify the three blocks in this code:
+   spam = 0
+   if spam == 10:
+       print('eggs')
+       if spam > 5:
+           print('bacon')
+       else:
+           print('ham')
+       print('spam')
+   print('spam')
+ A:
+   1st block is 
+       
+       print('eggs')
+       if spam > 5:
+           print('bacon')
+       else:
+           print('ham')
+       print('spam')
+
+
+
+
+   2nd block is print('bacon')
+   3rd block is print('spam')
