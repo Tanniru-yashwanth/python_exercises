@@ -1,0 +1,2 @@
+2.what are the three boolean operations?
+A: and,or and not
