@@ -1,0 +1,15 @@
+3.write out the truth tables of each boolean opeartor (that is ,every possible combination of Boolean values for the operator and what they valuate to )?
+A:
+  truth table for 'and' operation
+   T and T  = T
+   T and F  = F
+   F and T  = F
+   F and F  = F
+  truth table for 'or' operation
+   T or T = T
+   T or F = T
+   F or T = T
+   F or F = F
+  truth table for not operation
+   not T = F
+   not F = T
