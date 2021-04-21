@@ -1,0 +1,8 @@
+5. what are the six comparison operators?
+A:
+  ==
+  >
+  <
+  <=
+  >=
+  ~=
