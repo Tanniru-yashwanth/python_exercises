@@ -1,0 +1,2 @@
+1.what are the two values of the boolean data types? How do you write them?
+A:boolean data types are True and False and the values are 0 and 1
