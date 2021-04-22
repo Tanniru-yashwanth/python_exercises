@@ -1,2 +1,17 @@
 11. what is the difference between break and continue?
 A: break stops the loop and continue skips the current iteration
+
+i = 0
+while i < 10:
+    i += 1
+    print(i)
+    break
+>>> 1
+
+i = 0
+while i < 10:
+    i += 1
+    continue
+    print(i)
+>>>
+(no output)
