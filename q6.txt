@@ -1,5 +1,4 @@
 6.what is the difference between the equal to operator and the assigment operator?
 A: Equal to operator (==) compares the two values
-   assigment operator (=) assignes the value in L.H.S to the variable in R.H.S
+   assigment operator (=) assignes the value in R.H.S to the variable in L.H.S
 
-  
