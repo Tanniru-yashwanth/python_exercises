@@ -10,3 +10,5 @@ def send_messages(text_message, sent_messages):
 msg_1 = ['hi', 'hello', 'gm']
 sent_message = []
 send_messages(msg_1, sent_message)
+print(msg_1)
+print(sent_message)
