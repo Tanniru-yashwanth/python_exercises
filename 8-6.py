@@ -1,10 +1,14 @@
+'''Write a function called city_country() that takes in the name
+of a city and its country. The function should return a string formatted like this:
+"Santiago, Chile"
+Call your function with at least three city-country pairs, and print the
+values that are returned.'''
+
+
 def city_country(city, country):
-    a = f"{city},{country}"
-    return a
+    return f"{city},{country}"
 
 
-b = city_country("hyd", "india")
-print(b)
+print(city_country("Hyd", "India"))
 
-c=city_country("california", "usa")
-print(c)
+print(city_country("California", "USA"))

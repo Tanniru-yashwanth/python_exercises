@@ -1,14 +1,19 @@
-def send_messages(text_message, sent_messages):
-    while text_message:
-        msg = text_message.pop()
-        print(f"text in text_message: {msg} ")
-        sent_messages.append(msg)
-    for text in sent_messages:
-        print(text)
+'''Start with a copy of your program from Exercise 8-9.
+Write a function called send_messages() that prints each text message and
+moves each message to a new list called sent_messages as it’s printed. After
+calling the function, print both of your lists to make sure the messages were
+moved correctly.'''
 
 
-msg_1 = ['hi', 'hello', 'gm']
-sent_message = []
-send_messages(msg_1, sent_message)
-print(msg_1)
-print(sent_message)
+def send_messages(msgs):
+    sent_messages = []
+    while msgs:
+        text = msgs.pop()
+        sent_messages.append(text)
+    print(msgs)
+    print(sent_messages)
+
+
+msgs = ['hi', 'hello', 'welcome']
+
+send_messages(msgs)
