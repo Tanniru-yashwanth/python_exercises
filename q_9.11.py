@@ -4,3 +4,7 @@ make an Admin instance, and call show_privileges() to show that
 everything is working correctly.'''
 
 
+from user_m import*
+
+admin = Admin('yashwanth', 'tanniru', 23, 'Male')
+admin.privileges.show_privileges()
