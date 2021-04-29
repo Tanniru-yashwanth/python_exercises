@@ -11,13 +11,13 @@ passes"""
 
 
 import unittest
-from city_functions import city_country_names
+from city_functions import city_country_population
 
 
 class CityCountryPopulation(unittest.TestCase):
     def test_city_country(self):
-        city_country_population = city_country_names('Hyderabad', 'India', 5000000000)
-        self.assertEqual(city_country_population, 'Hyderabad, India - 5000000000')
+        city_country_population_ = city_country_population('Hyderabad', 'India', 5000000000)
+        self.assertEqual(city_country_population_, 'Hyderabad, India 5000000000')
 
 
 if __name__ == '__main__':

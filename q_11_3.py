@@ -7,23 +7,23 @@ _raise() and test_give_custom_raise(). Use the setUp() method so you don’t
 have to create a new employee instance in each test method. Run your test
 case, and make sure both tests pass"""
 
-
-class Employee:
-    def __init__(self, first_name, last_name, annual_salary):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.annual_salary = int(annual_salary)
-
-    def display_name(self):
-        print(f"{self.first_name}, {self.last_name}, {self.annual_salary}")
-
-    def give_rise(self, added_income=5000):
-        self.annual_salary += int(added_income)
-        print(self.annual_salary)
+import unittest
+from employee import Employee
 
 
-"""employee = Employee('Yashwanth', 'Tanniru', 10000)
-employee.display_name()
-employee.give_rise()"""
+class TestEmployee(unittest.TestCase):
+    def setUp(self):
+        self.employee = Employee('Yashwanth', 'Tanniru', '10000')
 
+    def test_give_default_rise(self):
+        self.employee.give_rise()
+        self.assertEqual(self.employee.annual_salary, 15000)
+
+    def test_give_custom_raise(self):
+        self.employee.give_rise(10000)
+        self.assertEqual(self.employee.annual_salary, 20000)
+
+
+if __name__ == '__main__':
+    unittest.main()
 
