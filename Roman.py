@@ -6,16 +6,20 @@ class Roman:
         self.List = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
 
     def convert(self):
+        a = ""
         for x in self.List:
             if self.integer != 0:
                 quotient = self.integer / x
 
                 if quotient != 0:
                     for y in range(int(quotient)):
-                        print(self.numbers[x], end="")
+                        a += self.numbers[x]
+                        a += ""
 
                 self.integer = self.integer % x
+        return a
 
 
-num = Roman(151)
-num.convert()
+num = Roman(234)
+b = num.convert()
+print(b)
