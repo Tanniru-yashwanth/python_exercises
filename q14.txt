@@ -1,1 +1,4 @@
-14.
+14. If u had a function named bacon() inside a module named spam, how would you call it after importing spam?
+A: 
+import spam
+spam.bacon()
