@@ -15,7 +15,7 @@ class Restaurant:
         print("The restaurant is open")
 
 
-class Restaurant:
+
     restaurant_1 = Restaurant('Hotel California', 'Continental')
     restaurant_1.describe_restaurant()
 
