@@ -220,6 +220,7 @@ OBJECT ORIENTED PROGRAMMING:
 	CLASS VARIABLES:
 		self.variables are the instance variables
 		variables declared outside the functions or declared without the instances are called class variables
+		instance variables are unique for each instance and class variables will be same for all the intances
 		class variables can be used in all the methods
 		class variables can accessible by both class and instance
 		
@@ -227,10 +228,9 @@ OBJECT ORIENTED PROGRAMMING:
 		The methods we define in the class are regular methods
 		class methods are created using decorator @classmethod
 		The class 'cls' will be passed as a first argument in the class method
-		class methods can be accesssed in the similar manner[ instance.classmethodname() ]
+		classmethods are used as a alternative constructors
 		Static methods are used when there is no classvariables and instance variables are involved in the methods
 		static methods are created by using decorator @staticmethod
-		static methods are accessed through instance.staticmethodname()
 	
 	INHERITANCE:
 		Acquring the behaviour from the existing class to the newclass is called inheritance
