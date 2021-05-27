@@ -1,0 +1,265 @@
+GIT:
+	git is a open source distributed control version which handles everything from small to large projects with speed and efficiency.
+	In order to use the git, we have to intiate the .git in the project i.e, it creates the repository.
+	The operations are done by using the git commands.
+	There are three stages in git version
+		1.Modified - we will make the changes in the existing files but not committed
+		2.Staging - we will add the changed files to staging in order to commit       [command = git add file] and [command = git add. (To add all the changed files to staging)]
+		3.Committed - The files added in staging will commit in this step  [command = git commit -m "message"] Note: "message will be related to the commits done"
+	Branch - The concept of the branch is a special feature in git. 
+		 we usually commit the changes of the project in the new branches to do not distrub existing features of the project.
+		 when the commits are done,we will push to the remote repository.
+		 when new features are stasified, we will put a pull request in order to merge with master branch.	
+
+GITHUB:
+	github is a online server that hosts our projects.
+	By using github, we can share our projects with others. Anyone who are accessible can clone the projects and make the commits and can push the project into the remote repository.
+	we can also share our code globally which can help the developers around the world.
+	
+
+	Some of the git commands and their functions:
+		git status - It shows the status of the files
+		git add filename.extension - It adds the changed file to the staging
+		git commit -m "message" - It commits the changes done
+		git clone origin(or)address - It clones the project from the remote repository		
+		git branch name - It creates the new branch
+		git checkout name - It checkouts to the branch named
+		git branch -a - It shows all the branches in the repository
+		git checkout -b name - This command creates the new branch and checkout to that branch
+		git pull origin - It pulls the project from the remote repository
+		git push origin - It pushes the code into the remote repository
+		git push --set-upstream origin name - This command is used to push the branch when it is created in local repository
+
+PYTHON:
+	Python is a interpretered, high level and general purpose programming language.
+	It is used in web development,machine learning and deep learning.
+	It is Dynamic Programming language(Because we need not to declare data types and variables)
+	It is object oriented programming language and proceducal.
+	
+	Why python?
+	The syntax of python is simple
+	The length of the code is small 
+	we need not to declare the variables and data types and it reduces the burden
+	
+
+FUNCTIONS:
+	Function is nothing but a block of code that performs the particular task.
+	when we want to do the same task several times , we will use a function.
+	Function is created with a keyword 'def' followed by 'function name' and the 'parenthesis()'. Parameters are given in the paranthesis that are used in the code.
+	Identation is used to indicate the block of code after ':'
+	In functions,mostly the built in function 'return' is used to return the values.
+	After creating functions, we will call the functions whenever we required. we will call the function by its 'function name'
+	Arguments are passed into the parameters by giving them in the callfunction
+		They are two ways in passing arguments:
+			positional arguments
+			Keyword arguments
+	we can also make optional arguments by giving None value to the arguments
+	we can also make default argumnets.
+	we can stores the functions in seperate files called as modules and we can import them whenever we required
+	Arbitrary number of arguments and keyword arguments using *args and **kwargs
+ 
+	Exmaple:
+		def operations(x, y):
+			a = x + y
+			b = x - y
+			c = x * y
+			d = x / y
+			return a, b, c, d
+	
+
+	Calling function
+		print(operations(6, 2))
+
+
+CLASSES:
+	In object oriented programming, classes is the most important concept.
+	Classes is like a blueprint for creating the objects.
+	object is nothing but the instance of the class which acquires all the behaviour from the class.
+	class is full of methods and data.
+	class is created with a keyword 'class' followed by the name (name should be in title case):
+	The first method is to initialize the attributes 
+		def __init__(self, parameters):
+			self.parameters = parameters
+	'self' should be your first parameter in your methods
+	attributes (self.parameters) can be used in all methods in the class
+	others methods can be created in similar manner
+	
+	INSTANCES:
+		we create a instance from the class i.e an object
+	object = classname(passing arguments)
+	we can access the attributes and methods of the class by using the following syntax
+	object.attribute
+	object.method()
+	
+	INHERITANCE:
+		inheritance is the concept of acquring the behaviour from the existing class 	
+		The new class is the child class (also called 'subclass') and the existing class is called parent class (also called 'superclass')
+		subclass is created by following syntax
+			class subclassname(superclassname):
+				def __init__(self, parameters):
+				super().__init__(parameters)
+				
+				def method(self, parameter):
+					operation
+
+	*we can also use classes as attributes in another class
+	we can store the classes in seperate files called modules and can import when it is required.
+	There are many ways to import:
+		from filename import classname
+		from filename import classname as anothername
+		import filename
+			filename.classname
+		from filename import classname*
+TESTING:
+	Testing is done to check whether the original output is as the expected output
+	we can test functions and classes
+	In order to check,
+		first we have to import unittest
+		and we have to import the function or class we wanted to test
+	we will create a subclass from unittest.Testcase
+		class name(unittest.Testcase)
+	and we will write a methods starts with the word test
+	In the method,
+			we will call function and assign to the variable
+			we will check by using assert methods
+			for suppose, to check whether they are same
+			self.assertEqual(variable, expectedoutput)
+	
+		if __name__ == '__main__':
+		unittest.main() 	
+	
+
+	There are many other assert methods:
+			assertIn(item, list)
+			assertNotEqual(output, expected)
+			assertNotIn(item, list)
+			assertTrue()
+			assertFalse()
+
+
+TERNARY OPERATOR:
+	Ternary operator is nothing but using the if else condition in single line
+	syntax:
+		option1 if conition else optional2
+
+LIST COMPREHENSIONS:
+	List comprehensions is creating a lists from a range or from a existing lists
+	syntax:
+		listname = [value for value in range( , )]
+	and can add if statements if required
+			= [value for value in anotherlist if condition] 
+	There are also nested lists i.e, onelist comprehension in another list comprehension
+
+LAMBDA EXPRESSIONS:
+	Lambda expressions are anonymous functions which are nameless , and created for writing short functions in a single line
+	lambda functions are commomly used for map, filter and reduce functions
+	syntax:
+		lambda parameter: expression 
+
+MAP:
+	Map is used for applying the function for every item in iterable object
+	syntax:
+		map(function, iterable object)
+	map returns a object which can be iterable
+	we will make object as a list or any another iterable object by constructors
+
+FILTER:
+	Filter is used to get particular items from the iterable data 
+	syntax:
+		filter(function, data)
+	filter is also a object which can be iterable
+	we will convert them using constructors
+
+REDUCE:
+	In order to use reduce function
+	we have to import functools
+	from functools import reduce
+	reduce(function, data)
+	we usually prefer for loop than using reduce function 
+
+DECORATOR:
+	Decorators are a way to dynamically alter the functionality of the function
+	Decorator is used for adding the functionality to the existing function
+	It is wrapping the function into the another function 
+	shortcut for using decorator: 
+		placing the @decorator function
+		above the original function
+
+PROPERTY DECORATOR:
+	Property decorator is used to access the method of the class as an attribute.
+	we will use property decorator by placing the @property above the method
+	i.e, wrapping the method in property decorator function
+
+SETTER:
+	Setter is used to modify the method that can be accessable as an attribute
+	Its syntax:
+		@methodname.setter 
+		def methoname()
+DELETER:
+	Deleter is used the method that can be accessable as an attribute
+	its syntax:
+		@methodname.deleter
+		def methoname() 				
+	
+		del instance.methoname
+
+OBJECT ORIENTED PROGRAMMING:
+
+	CLASSES AND INSTANCES:
+		Class is a like a blueprint for creating objects.
+		Instance is an object created from the class
+		class is created with keyword 'class'
+		The name of the class is advicable to be in title case
+		The syntax for creating instance:
+				instance = Classname()
+		class is full of attributes and methods
+		The first method in the class is __init__ method
+			It will initialize the attributes
+		All the methods will contain the instance as a first parameter(self)
+		
+	CLASS VARIABLES:
+		self.variables are the instance variables
+		variables declared outside the functions or declared without the instances are called class variables
+		class variables can be used in all the methods
+		class variables can accessible by both class and instance
+		
+	CLASS METHODS AND STATIC METHODS:
+		The methods we define in the class are regular methods
+		class methods are created using decorator @classmethod
+		The class 'cls' will be passed as a first argument in the class method
+		class methods can be accesssed in the similar manner[ instance.classmethodname() ]
+		Static methods are used when there is no classvariables and instance variables are involved in the methods
+		static methods are created by using decorator @staticmethod
+		static methods are accessed through instance.staticmethodname()
+	
+	INHERITANCE:
+		Acquring the behaviour from the existing class to the newclass is called inheritance
+		child class is created in the following way
+			class subclass(superclass)
+		obviously, the first method will be __init__ method
+		In the __init__ method,
+			it intializes the parent class attributes using following syntax
+				super().__init__(paramters)
+
+	
+	SPECIAL METHODS:
+		Special methods are used to rewrite the results of the builtin functions
+		They are also called magic methods or dunder methods
+		Most commomly used special methods
+			__init__(to intiate the attributes)
+			__repr__(to rewrite the object information)
+			__str__(to display for the enduser)
+		 	__add__(to add the objects)
+		They are called automatically and can be also called manually
+ 
+
+
+
+	
+	
+		
+
+
+		
+		
+	
