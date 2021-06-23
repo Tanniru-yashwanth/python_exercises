@@ -4,7 +4,7 @@ from time import sleep
 from settings import Settings
 from ship import Ship
 from bullet import Bullet
-from alien import Alien
+from alien_invansions.alien import Alien
 from game_stats import GameStats
 from scoreboard import ScoreBoard
 from button import Button
