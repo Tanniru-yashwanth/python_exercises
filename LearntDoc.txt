@@ -196,7 +196,7 @@ SETTER:
 		@methodname.setter 
 		def methoname()
 DELETER:
-	Deleter is used the method that can be accessable as an attribute
+	Deleter is used to delete the method that can be accessable as an attribute
 	its syntax:
 		@methodname.deleter
 		def methoname() 				
