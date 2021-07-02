@@ -123,6 +123,6 @@ STATIC_URL = '/static/'
 # my settings
 LOGIN_URL = 'users:login'
 # heroku_settings
-import django_heroku
+import django-heroku
 
-django_heroku.settings(locals())
+django-heroku.settings(locals())
