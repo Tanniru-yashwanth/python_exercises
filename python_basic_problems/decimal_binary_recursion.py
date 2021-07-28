@@ -6,7 +6,7 @@ def binary(number):
     print(number % 2, end='')
 
 
-number = int(input("Enter the number:"))
-binary(number)
+number_in = int(input("Enter the number:"))
+binary(number_in)
 
 
