@@ -11,4 +11,4 @@ for i in range(1, 100):
 if lcm:
     print(lcm[0])
 else:
-    print("There is a lcm for the given numbers")
+    print("There is no lcm for the given numbers")
